@@ -1,24 +1,33 @@
+# 🛡️ File Integrity Monitor Tool
 
-# AES-256 File Encryption Tool
+This Python script monitors changes in files by calculating and comparing their **SHA-256 hash values** to ensure file integrity.
 
-This tool allows you to encrypt and decrypt files using AES-256 encryption with a graphical user interface (GUI).
+## 🔧 Features
 
-## Features
-- AES-256 encryption and decryption.
-- Password-based key generation.
-- Simple and user-friendly interface.
+- Detects **added**, **removed**, and **modified** files
+- Uses `hashlib` for hashing
+- Saves and compares file hashes in `file_hashes.json`
+- Simple and lightweight — no external libraries needed
 
-## Usage
-1. Run the Python script.
-2. Browse and select the file to encrypt or decrypt.
-3. Enter a strong password.
-4. Click 'Encrypt' or 'Decrypt'.
+## 🚀 Getting Started
 
-## Dependencies
-Install the required libraries with:
+### Prerequisites
+- Python 3.x
+
+### Installation
+Clone the repository:
+```bash
+git clone https://github.com/Adityajain2829/file-integrity-monitor.git
+cd file-integrity-monitor
 ```
-pip install -r requirements.txt
-```
 
-## License
-MIT License
+### Usage
+```bash
+python file_integrity_monitor.py
+```
+Enter the directory path when prompted, and the script will:
+- Scan and store hashes on the first run
+- Detect changes in subsequent runs
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
