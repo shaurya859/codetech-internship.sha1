@@ -1,33 +1,35 @@
-# 🛡️ File Integrity Monitor Tool
+# 🛠️ Penetration Testing Toolkit
 
-This Python script monitors changes in files by calculating and comparing their **SHA-256 hash values** to ensure file integrity.
+This project delivers a modular Python toolkit for basic penetration testing. It includes:
 
-## 🔧 Features
+## 📦 Modules
 
-- Detects **added**, **removed**, and **modified** files
-- Uses `hashlib` for hashing
-- Saves and compares file hashes in `file_hashes.json`
-- Simple and lightweight — no external libraries needed
+### 1. 🔍 Port Scanner
+Scans common ports on a target IP.
 
-## 🚀 Getting Started
+Usage:
+```bash
+python port_scanner.py
+```
 
-### Prerequisites
+### 2. 🔓 Brute Forcer
+Performs a basic dictionary attack on login forms.
+
+Usage:
+```bash
+python brute_forcer.py
+```
+
+## 📚 Requirements
+
 - Python 3.x
+- requests
 
-### Installation
-Clone the repository:
+Install with:
 ```bash
-git clone https://github.com/Adityajain2829/file-integrity-monitor.git
-cd file-integrity-monitor
+pip install requests
 ```
-
-### Usage
-```bash
-python file_integrity_monitor.py
-```
-Enter the directory path when prompted, and the script will:
-- Scan and store hashes on the first run
-- Detect changes in subsequent runs
 
 ## 📄 License
+
 This project is licensed under the [MIT License](LICENSE).
